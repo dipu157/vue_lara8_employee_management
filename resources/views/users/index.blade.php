@@ -11,7 +11,7 @@
             @if (session()->has('message'))
           <div class="alert alert-success">
             {{session('message')}}
-          </div>            
+          </div>
           @endif
           </div>
             <div class="card-header">
@@ -34,8 +34,10 @@
                             <th scope="row">{{ $user->id }}</th>
                             <td>{{ $user->username }}</td>
                             <td>{{ $user->email }}</td>
-                            <td>Edit/Delete</td>
-                        </tr>                          
+                            <td>
+                                <a href="{{ route('users.edit', $user->id) }}" class="btn btn-success">Edit</a>
+                            </td>
+                        </tr>
                       @endforeach
                     </tbody>
                   </table>
