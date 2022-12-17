@@ -61,7 +61,7 @@
 
              <!-- Nav Item - Charts -->
              <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="/employees">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Employee Management</span></a>
             </li>
@@ -75,10 +75,10 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Country</a>
-                        <a class="collapse-item" href="cards.html">State</a>
-                        <a class="collapse-item" href="cards.html">Department</a>
-                        <a class="collapse-item" href="cards.html">City</a>
+                        <a class="collapse-item" href="{{ route('countries.index')}}">Country</a>
+                        <a class="collapse-item" href="{{ route('states.index')}}">State</a>
+                        <a class="collapse-item" href="{{ route('departments.index')}}">Department</a>
+                        <a class="collapse-item" href="{{ route('cities.index')}}">City</a>
                     </div>
                 </div>
             </li>
@@ -132,6 +132,10 @@
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
