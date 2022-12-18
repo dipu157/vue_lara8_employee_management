@@ -7,7 +7,7 @@
         <div class="card  mx-auto">
             <div>
                 <div class="alert alert-success">
-                    {{ session('message') }}
+                    
                 </div>
             </div>
             <div class="card-header">
@@ -26,7 +26,7 @@
                         </form>
                     </div>
                     <div>
-                        <a href="#" class="btn btn-primary mb-2">Create</a>
+                        <router-link :to="{name: 'EmployeesCreate'}" class="btn btn-primary mb-2">Create</router-link>
                     </div>
                 </div>
             </div>
@@ -35,14 +35,18 @@
                     <thead>
                         <tr>
                             <th scope="col">#Id</th>
-                            <th scope="col">Country Code</th>
-                            <th scope="col">Name</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Department</th>
                             <th scope="col">Manage</th>
                         </tr>
                     </thead>
                     <tbody>
                             <tr>
                                 <th scope="row"></th>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -54,7 +58,7 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
